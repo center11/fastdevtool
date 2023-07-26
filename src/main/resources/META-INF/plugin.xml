@@ -1,0 +1,35 @@
+<idea-plugin>
+    <id>pers.zhf.fastdevtool.fastdevtool</id>
+    <name>FastDevTool</name>
+    <vendor email="479437738@qq.com" url="">zhf</vendor>
+
+    <description><![CDATA[
+      A toolkit to help developers develop quickly。
+      help doc：<a href="https://youtu.be/HOlNi2b0oXI">https://youtu.be/HOlNi2b0oXI</a><br>
+      <ul>
+          <li>Usage：right click on the project folder to pop up the 'FastDevTool', please refer to the help doc for details</li>
+          <li>Usage scenario：provide common technical document query, template code generation and other development tools to help developers improve coding efficiency</li>
+      </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <h3>1.0.0</h3>
+      <ul>
+          <li>Right click on the project folder to pop up the 'FastDevTool'</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <group id="devTool" text="快速开发工具" popup="true">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+            <action id="helpBookAction" class="pers.zhf.fastdevtool.ui.HelpBookAction" text="速查手册" description="点击查看日常开发常用技术文档"/>
+            <action id="codeGeneratorAction" class="pers.zhf.fastdevtool.ui.CodeGeneratorAction" text="开发常用代码生成" description="生成日常开发常用的代码模板"/>
+        </group>
+    </actions>
+</idea-plugin>

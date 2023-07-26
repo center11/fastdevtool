@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pers.zhf.fastdevtool.ui.HelpBookForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="609" height="400"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+      <preferredSize width="400" height="200"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="38dd3" class="javax.swing.JLabel" binding="springDoc">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&lt;html&gt;&lt;a href=&quot;&quot;&gt;Spring文档&lt;/a&gt;&lt;/html&gt;"/>
+          <toolTipText value="https://spring.io/projects/spring-boot"/>
+        </properties>
+      </component>
+      <component id="874eb" class="javax.swing.JLabel" binding="redisDoc">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="&lt;html&gt;&lt;a href=&quot;&quot;&gt;Redis菜鸟教程&lt;/a&gt;&lt;/html&gt;"/>
+          <toolTipText value="https://www.runoob.com/redis/redis-tutorial.html"/>
+        </properties>
+      </component>
+      <vspacer id="c6616">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
